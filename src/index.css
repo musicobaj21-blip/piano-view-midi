@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #090a0d;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+  }
+
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom scrollbars for studio controls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0e13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232532;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #36394a;
+}
+
+/* Piano Key Styling Matching Screenshot */
+.piano-white-key {
+  background: #ffffff;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.12), inset 1px 0 1px rgba(0, 0, 0, 0.05), inset -1px 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0,0,0,0.3);
+  transition: transform 0.06s ease, background 0.08s ease;
+}
+
+.piano-white-key:hover {
+  background: #f7f7f9;
+}
+
+.piano-white-key.is-active {
+  background: #fff5f0 !important;
+  box-shadow: inset 0 -4px 0 #f25100, inset 0 2px 4px rgba(242, 81, 0, 0.2), 0 0 10px rgba(242, 81, 0, 0.3) !important;
+}
+
+.piano-black-key {
+  background: #18191f;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 -2px 2px rgba(0, 0, 0, 0.7), 1px 3px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.06s ease, background 0.08s ease;
+}
+
+.piano-black-key:hover {
+  background: #24252e;
+}
+
+.piano-black-key.is-active {
+  background: #f25100 !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.4), 0 0 12px rgba(242, 81, 0, 0.5) !important;
+}
+
+/* Circular Badge for Active Piano Key (Exact match to screenshot: Do, Mi, Sol, Si) */
+.key-note-badge {
+  background-color: #f25100;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+

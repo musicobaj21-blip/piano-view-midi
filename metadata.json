@@ -1,0 +1,8 @@
+{
+  "name": "Remix Rumie Piano View MIDI",
+  "description": "Visualizador de teclado de piano MIDI y análisis armónico interactivo del ecosistema Rumie Music Tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
